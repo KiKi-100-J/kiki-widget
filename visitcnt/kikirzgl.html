@@ -16,15 +16,15 @@
         .box {
             width: 100%;
             text-align: center;
-            background-color: #b59786;
-            color: #93736d;
+            background-color: #e6ccb9;
+            color: #44271e;
             padding: 10px 0;
             border-radius: 5px;
         }
 
         #busuanzi_value_page_pv,
         #name {
-            color: #e30139;
+            color: #fb1a00;
             font-weight: bold;
         }
 
@@ -34,25 +34,28 @@
         }
 
         #contact a {
-            color: #795a5f;
+            color: #ffffff;
+            border-radius: 3px;
+            padding: 0 7px;
+            background-color: #9b5447;
             text-decoration: none;
         }
 
         strong {
             display: inline-block;
             padding: 0 7px;
-            background-color: rgba(105, 126, 94, 1);
+            background-color: #9b5447;
             border-radius: 5px;
             margin: 0 2px;
-            color: #d6e1ce;
+            color: #ffffff;
         }
     </style>
 </head>
 
 <body>
     <div class="box">
-        <span id="busuanzi_container_page_pv">🎉 你是「<strong id="template"></strong>」的第 <span
-                id="busuanzi_value_page_pv"></span> 位访客<span id="label"></span>，感谢关注<span id="name">「KiKi是100%J人」</span></span>
+        <span id="busuanzi_container_page_pv">你是「<strong id="template"></strong>」的第 <span
+                id="busuanzi_value_page_pv"></span> 位<span id="label"></span>，感谢关注<span id="name">「KiKi是100%J人」</span></span>
         <p id="contact">
           <span>小红书：<a target="blank"
             href="https://www.xiaohongshu.com/user/profile/6762af9c000000001801eecb?xsec_token=YBU9R49m4WUbVcWBppSfrx7VIrVxgu44NjBqgTv3iqVQo=&xsec_source=app_share&xhsshare=CopyLink&appuid=6762af9c000000001801eecb&apptime=1734775813&share_id=af8de48bb9dd44e29f39e95bb22c0262">@KiKi是100%J人</a></span>
@@ -69,7 +72,7 @@
         }
         return null;
     }
-    const label = getQueryString('label') || '访问者'
+    const label = getQueryString('label') || '访客'
     document.getElementById('label').innerHTML = label;
     document.getElementById('template').innerHTML = document.title;
 </script>
